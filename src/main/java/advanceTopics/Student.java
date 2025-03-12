@@ -1,5 +1,6 @@
 package main.java.advanceTopics;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Student {
@@ -8,11 +9,14 @@ public class Student {
     int grade;
     int no;
 
+    List<Student> studentList;
+
     public Student(String firstName, String lastName, int no, int grade) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.no = no;
         this.grade = grade;
+        this.studentList = new ArrayList<>();
     }
 
     public void showFullName(List<Student> list, int no) {
